@@ -14,3 +14,15 @@ const eatFruit = (Fruit: Fruit) => { // (fruit: fruit) is parameter list
     console.log("You ate an..." + Fruit);
 };
 eatFruit("apple");
+
+//ex3
+type Result = true | false;
+
+const printResult = (Result: Result) => {
+    if(Result=== true) {
+        console.log("Pass")
+    }else {
+    console.log("Fail")
+    }
+}
+printResult(true);
