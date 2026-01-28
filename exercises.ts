@@ -26,3 +26,15 @@ const printResult = (Result: Result) => {
     }
 }
 printResult(true);
+
+//Interfaces and Type Aliases (type aliases means it lets you give a name to a type so I can reeuse it everywhere)
+//ex1
+interface Book {
+    title: string; //these are my properties
+    pages: number;
+}
+const describeBook = (book: Book) => {
+    console.log(`The book ${book.title} has ${book.pages} pages.`);
+};
+const favoriteBook: Book = { title: "om alla katter i världen försvann", pages: 232 };
+describeBook(favoriteBook);
