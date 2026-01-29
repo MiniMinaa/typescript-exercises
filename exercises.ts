@@ -38,3 +38,22 @@ const describeBook = (book: Book) => {
 };
 const favoriteBook: Book = { title: "om alla katter i världen försvann", pages: 232 };
 describeBook(favoriteBook);
+
+//ex2
+interface Teacher {
+    name: string;
+    subject: string;
+}
+interface Employee {
+    id: number;
+    email: string;
+}
+type SchoolTeacher = Teacher & Employee;
+
+const printTeacherInfo = (schoolteacher: SchoolTeacher) => {
+    console.log(`name: ${schoolteacher.name}, subject: ${schoolteacher.subject}, id: ${schoolteacher.id}, email: ${schoolteacher.email}`)
+}
+const michiel: SchoolTeacher = {name: "Michiel", subject: "back-end", id: 1, email: "michiel@sundsgarden.se"
+
+}
+printTeacherInfo(michiel);
