@@ -81,6 +81,17 @@ const showColor = (color: Color) => {
 };
 showColor(Color.Red)
 
+//ex2
+
+enum PizzaSize {
+    Small,
+    Medium,
+    Large,
+}
+const orderPizza = (size: PizzaSize) => {
+    console.log(`You ordered a ${PizzaSize[size]} pizza`)
+};
+orderPizza(PizzaSize.Small);
 //ex3
 /*
 enum Role {
