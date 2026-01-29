@@ -68,7 +68,19 @@ const printCar = (car: Car) => {
 }
 printCar({ brand: "MattelBarbie", year: 2010});
 
-//Enums (fixed list of options
+//Enums (fixed list of options)
+//ex1
+
+enum Color {
+    Red,
+    Green,
+    Blue,
+}
+const showColor = (color: Color) => {
+    console.log(`You choose ${Color[color]}`)
+};
+showColor(Color.Red)
+
 //ex3
 /*
 enum Role {
