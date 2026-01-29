@@ -93,7 +93,6 @@ const orderPizza = (size: PizzaSize) => {
 };
 orderPizza(PizzaSize.Small);
 //ex3
-/*
 enum Role {
     Admin = "admin",
     User = "user",
@@ -109,4 +108,18 @@ const printRole =(role: Role) => {
     }
 }
 printRole(Role.Admin)
-*/
+
+//Generics
+//ex1
+
+const wrapInArray = <T>(input: T): T => {
+    return input;
+}
+console.log(wrapInArray("cat"));
+
+//ex2
+
+const firstItem = <T>(array: T[]): T | undefined=> {
+    return array[0];
+}
+console.log(firstItem([1, 2, 3]));
