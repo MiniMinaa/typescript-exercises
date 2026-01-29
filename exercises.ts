@@ -60,9 +60,9 @@ printTeacherInfo(michiel);
 
 //ex3
 enum Role {
-    Admin = "you have full access",
-    User = "You have limited access",
-    Guest = "You have guest access",
+    Admin = "admin",
+    User = "user",
+    Guest = "guest",
 }
 const printRole =(role: Role) => {
     if(role === Role.Admin) {
@@ -73,3 +73,4 @@ const printRole =(role: Role) => {
         console.log("You have guest access");
     }
 }
+printRole(Role.Admin)
