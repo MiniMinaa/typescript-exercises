@@ -57,3 +57,19 @@ const michiel: SchoolTeacher = {name: "Michiel", subject: "back-end", id: 1, ema
 
 }
 printTeacherInfo(michiel);
+
+//ex3
+enum Role {
+    Admin = "you have full access",
+    User = "You have limited access",
+    Guest = "You have guest access",
+}
+const printRole =(role: Role) => {
+    if(role === Role.Admin) {
+        console.log("You have full access");
+    } else if (role === Role.User) {
+        console.log("You have limited access");
+    } else if (role === Role.Guest) {
+        console.log("You have guest access");
+    }
+}
