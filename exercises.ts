@@ -59,6 +59,18 @@ const michiel: SchoolTeacher = {name: "Michiel", subject: "back-end", id: 1, ema
 printTeacherInfo(michiel);
 
 //ex3
+interface Car {
+    brand: string;
+    year: number;
+}
+const printCar = (car: Car) => {
+    console.log(`brand: ${car.brand}, year: ${car.year}`);
+}
+printCar({ brand: "MattelBarbie", year: 2010});
+
+//Enums (fixed list of options
+//ex3
+/*
 enum Role {
     Admin = "admin",
     User = "user",
@@ -74,3 +86,4 @@ const printRole =(role: Role) => {
     }
 }
 printRole(Role.Admin)
+*/
