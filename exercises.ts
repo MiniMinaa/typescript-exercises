@@ -123,3 +123,9 @@ const firstItem = <T>(array: T[]): T | undefined=> {
     return array[0];
 }
 console.log(firstItem([1, 2, 3]));
+
+//ex3
+const swap = <T>(first: T, second: T): T [] => {
+    return [second, first];
+}
+console.log(swap("hello", "world"));
